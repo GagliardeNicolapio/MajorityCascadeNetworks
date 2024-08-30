@@ -41,7 +41,7 @@ def cost_seeds_greedy(G, k, c):
                 argmax = v
 
         #prima c'era anche argmax==0 or
-        if  Sd_cost + c[argmax] > k:
+        if  argmax==0 or Sd_cost + c[argmax] > k:
             #controllo se c'è ancora qualche nodo che rientra nel budget
             if there_is_node_cost_min(G, k-Sd_cost,c):
                 nodi_esclusi.add(argmax) #escludo il nodo che massimizza f perche supera il budget disponibile
@@ -50,7 +50,7 @@ def cost_seeds_greedy(G, k, c):
                 return Sp
 
         #prima c'era anche argmax!=0 and
-        if Sd_cost + c[argmax] <= k: #il nodo che massimizza la fun ha costo minore del budget rimanente
+        if argmax!=0 and Sd_cost + c[argmax] <= k: #il nodo che massimizza la fun ha costo minore del budget rimanente
             Sd_cost += c[argmax]
             Sp.add(argmax)
        # elif argmax != 0 and Sd_cost + c[argmax] > k:
