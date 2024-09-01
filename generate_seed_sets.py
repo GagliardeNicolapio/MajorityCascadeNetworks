@@ -28,23 +28,23 @@ if __name__ == '__main__':
     V = set(g.nodes())
     N = {v: set(g.neighbors(v)) for v in g.nodes}
     k = 60
- #   c = read_file("costi/random_costs.txt")
- #   print("costi: ")
- #   print(c)
+    c = read_file("costi/random_costs.txt")
+    print("costi: ")
+    print(c)
 
-#    print("seed set costMajorityCascadeProblem")
-#    d = costMajorityCascadeProblem(g, c, k)
-#    print(d)
-#    save_in_file(d,"seed_sets/random_costs/costMajCasProb_budget"+str(k)+"_seedset_degreecost.txt")
+    print("seed set costMajorityCascadeProblem")
+    d = costMajorityCascadeProblem(g, c, k)
+    print(d)
+    save_in_file(d,"seed_sets/random_costs/costMajCasProb_budget"+str(k)+"_seedset_degreecost.txt")
 
-#    g = nx.read_adjlist('insecta-ant-trophallaxis-colony2.edges_without_timestamp.txt')
-#    V = set(g.nodes())
-#    N = {v: set(g.neighbors(v)) for v in g.nodes}
-#    c = read_file("costi/random_costs.txt")
-#    print("seed set costseedsgredy")
-#    d = cost_seeds_greedy(g, k, c)
-#    print(d)
- #   save_in_file(d,"seed_sets/random_costs/costSeedsGreedy"+str(k)+"_seedset.txt")
+    g = nx.read_adjlist('insecta-ant-trophallaxis-colony2.edges_without_timestamp.txt')
+    V = set(g.nodes())
+    N = {v: set(g.neighbors(v)) for v in g.nodes}
+    c = read_file("costi/random_costs.txt")
+    print("seed set costseedsgredy")
+    d = cost_seeds_greedy(g, k, c)
+    print(d)
+    save_in_file(d,"seed_sets/random_costs/costSeedsGreedy"+str(k)+"_seedset.txt")
 
     g = nx.read_adjlist('insecta-ant-trophallaxis-colony2.edges_without_timestamp.txt')
     V = set(g.nodes())
