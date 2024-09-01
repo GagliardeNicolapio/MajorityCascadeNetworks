@@ -13,10 +13,11 @@ Il file `influence_diffusion.py` contiene il codice necessario per il calcolo de
 Il file `insecta-ant-trophallaxis-colony2.edges` è il dataset che rappresenta la rete sociale utilizzata, le prime due colonne rappresentano un arco, la terza il peso e la quarta il timestamp. Il dataset è scaricabile al seguete link: [https://networkrepository.com/insecta-ant-trophallaxis-colony2.php](https://networkrepository.com/insecta-ant-trophallaxis-colony2.php).
 Il file `insecta-ant-trophallaxis-colony2.edges_without_timestamp.txt` è il dataset senza pesi e senza timestamp.
 
-###Algoritmi, funzioni di costo, seed sets e risultati
+### Algoritmi, funzioni di costo, seed sets e risultati
 In `algorithms` sono presenti gli algoritmi utilizzati per la selezione del seed set. 
 In `cost_functions` sono presenti le funzioni di costo. In `costi` sono presenti i costi utilizzati per gli esperimenti.
 In `influence_results` ci sono i risultati del processo di influence diffusion.
 In `seed_sets` ci sono i seed sets selezionati dagli algoritmi presenti in `algorithms`.
+
 ### Generazione grafici
 Il file `plot_results` permette la creazione di grafici che rappresentano i numeri di nodi infettati.
